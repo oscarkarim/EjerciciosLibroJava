@@ -9,13 +9,23 @@ package libro.cap02;
  *
  * @author Usuario
  */
-public abstract class FiguraGeometrica
+public class TestGC
 {
- // metodo abstracto
- public abstract double area();
- @Override
- public String toString()
+ private static int cont = 0;
+ public TestGC()
  {
- return "area = " + area();
+ cont++;
+ System.out.println(cont);
+ }
+ public void finalize()
+ {
+ cont--;
+ }
+ public static void main(String args[])
+ {
+ while( true )
+ {
+ new TestGC();
+ }
  }
 }

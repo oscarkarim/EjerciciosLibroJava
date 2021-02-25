@@ -9,13 +9,13 @@ package libro.cap02;
  *
  * @author Usuario
  */
-public abstract class FiguraGeometrica
+public class TestX
 {
- // metodo abstracto
- public abstract double area();
- @Override
- public String toString()
+ public static void main(String[] args)
  {
- return "area = " + area();
+ X x1 = new X(5,4);
+ X x2 = new X(2,7);
+ System.out.println("x1 = " + x1);
+ System.out.println("x2 = " + x2);
  }
 }

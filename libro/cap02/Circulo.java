@@ -9,8 +9,9 @@ package libro.cap02;
  *
  * @author Usuario
  */
-public class Circulo extends FiguraGeometrica{
-    private int radio;
+public class Circulo extends FiguraGeometrica
+{
+ private int radio;
  public Circulo(int r)
  {
  radio = r;
@@ -20,5 +21,4 @@ public class Circulo extends FiguraGeometrica{
  // retorno "PI por radio al cuadrado"
  return Math.PI*Math.pow(radio,2);
  }
-    
 }

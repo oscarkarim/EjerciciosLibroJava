@@ -9,13 +9,17 @@ package libro.cap02;
  *
  * @author Usuario
  */
-public abstract class FiguraGeometrica
+public class Triangulo extends FiguraGeometrica
 {
- // metodo abstracto
- public abstract double area();
- @Override
- public String toString()
+ private double base;
+ private double altura;
+ public Triangulo(int b, int h)
  {
- return "area = " + area();
+ base = b;
+ altura = h;
+ }
+ public double area()
+ {
+ return base*altura/2;
  }
 }
